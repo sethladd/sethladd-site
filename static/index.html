@@ -13,6 +13,14 @@
         padding-top: 60px;
         padding-bottom: 40px;
       }
+
+      .header .pic {
+      	text-align: center;
+      }
+
+      .header .pic img {
+      	border-radius: 5px;
+      }
     </style>
     <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
 
@@ -23,20 +31,22 @@
 
     <div class="container">
 
-      <img src="images/seth-ladd-headshot.jpg" width="200" height="200"
-      	style="float:left;border-radius:5px">
+    	<div class="row header">
+    		<div class="span4 pic">
+      			<img src="images/seth-ladd-headshot.jpg" width="210" height="210"
+      				alt="Picture of Seth Ladd">
+     	 	</div>
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-
-      	
-
-        <h1>Seth Ladd</h1>
-        <p>
-        	Chrome Developer Advocate,
-        	web engineer, husband, and father.
-        </p>
-      </div>
+		  	<div class="span8">
+		  		<div class="hero-unit">
+				    <h1>Seth Ladd</h1>
+				    <p>
+				    	Chrome Developer Advocate,
+				    	web engineer, husband, and father.
+				    </p>
+				</div>
+			</div>
+    	</div>
 
       <div class="row">
       	<div class="span4">
@@ -110,14 +120,14 @@
 
       		<dl>
       			<dt>
-      				Developer Advocate for the Chrome Web Store
+      				Developer Advocate for the <a href="https://chrome.google.com/webstore/">Chrome Web Store</a>
       			</dt>
       			<dd>
       				Helped numerous businesses build and launch web apps
       				into the Chrome Web Store.
       			</dd>
       			<dt>
-      				Launched Angry Birds for the web
+      				Launched <a href="http://chrome.angrybirds.com">Angry Birds for the web</a>
       			</dt>
       			<dd>
       				Helped Angry Birds launch on the modern web.
@@ -139,6 +149,12 @@
       			</dt>
       			<dd>
       				DSES is a large data warehouse of safety information, and its Rails front-end, for the Office of the Secretary of the Defense. Yes, Rails is deployed in the military.
+      			</dd>
+      			<dt>
+      				Co-authored <a href="http://www.amazon.com/Expert-Spring-Flow-Experts-Voice/dp/159059584X">Expert Spring MVC</a>
+      			</dt>
+      			<dd>
+      				In which I learned a lot about authoring and coordinating a multi-author project.
       			</dd>
       			<dt>
       				Built Errorlytics
