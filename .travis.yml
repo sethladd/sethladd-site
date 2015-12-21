@@ -3,3 +3,8 @@ script: ./travis.sh
 branches:
   only:
     - master
+deploy:
+  provider: gae
+  keyfile: sethladd-site-8958bc933793.json.enc
+  default: true
+  project: sethladd-site
