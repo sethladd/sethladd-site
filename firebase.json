@@ -1,0 +1,9 @@
+{
+  "firebase": "sethladd-com",
+  "public": "static",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
