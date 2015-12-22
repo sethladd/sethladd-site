@@ -8,7 +8,7 @@ if [ $TRAVIS_BRANCH = "master" ]; then
   echo "Installing gcloud"
 
   curl -o /tmp/google-cloud-sdk-91.0.1-linux-x86_64.tar.gz https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-91.0.1-linux-x86_64.tar.gz 
-  tar xzf /tmp/google-cloud-sdk-91.0.1-linux-x86_64.tar.gz /tmp
+  tar xzf /tmp/google-cloud-sdk-91.0.1-linux-x86_64.tar.gz -C /tmp
   source '/tmp/google-cloud-sdk/path.bash.inc'
 
   which gcloud
