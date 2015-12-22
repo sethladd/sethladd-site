@@ -3,17 +3,7 @@ script: ./travis.sh
 branches:
   only:
   - master
-deploy:
-  provider: gae
-  version: 2
-  keyfile: sethladd-site-8958bc933793.json
-  default: true
-  skip_cleanup: true
-  project: sethladd-site
 before_install:
 - openssl aes-256-cbc -K $encrypted_cd598ac5ae96_key -iv $encrypted_cd598ac5ae96_iv
   -in sethladd-site-8958bc933793.json.enc -out sethladd-site-8958bc933793.json
   -d
-before_deploy: echo before_deploy
-after_deploy: echo after_deploy && "cat /home/travis/.config/gcloud/logs/2015.12.22/*.log"
-after_failure: echo after_failure && "cat /home/travis/.config/gcloud/logs/2015.12.22/*.log"
