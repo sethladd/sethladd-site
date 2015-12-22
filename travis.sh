@@ -16,6 +16,6 @@ if [ $TRAVIS_BRANCH = "master" ]; then
   which gcloud
 
   gcloud auth activate-service-account --key-file sethladd-site-8958bc933793.json
-  gcloud preview app deploy --version=2 --project=sethladd-site app.yaml
+  gcloud -q preview app deploy --version=2 --project=sethladd-site app.yaml
   cat /home/travis/.config/gcloud/logs/2015.12.22/*.log
 fi
