@@ -14,5 +14,4 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_cd598ac5ae96_key -iv $encrypted_cd598ac5ae96_iv
   -in sethladd-site-8958bc933793.json.enc -out sethladd-site-8958bc933793.json
   -d
-after_deploy:
-- cat /home/travis/.config/gcloud/logs/2015.12.22/*.log
+after_deploy: cat /home/travis/.config/gcloud/logs/2015.12.22/*.log
