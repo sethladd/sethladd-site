@@ -1,5 +1,5 @@
 # Fast fail the script on failures.
-# set -e
+set -e
 
 if [ $TRAVIS_BRANCH = "master" ]; then
   npm install -g firebase-tools
@@ -17,5 +17,4 @@ if [ $TRAVIS_BRANCH = "master" ]; then
 
   gcloud auth activate-service-account --key-file sethladd-site-8958bc933793.json
   gcloud -q preview app deploy --version=2 --project=sethladd-site app.yaml
-  cat /home/travis/.config/gcloud/logs/2015.12.22/*.log
 fi
