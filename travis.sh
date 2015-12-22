@@ -1,5 +1,5 @@
 # Fast fail the script on failures.
-set -e
+# set -e
 
 if [ $TRAVIS_BRANCH = "master" ]; then
   npm install -g firebase-tools
