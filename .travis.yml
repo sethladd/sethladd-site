@@ -5,6 +5,7 @@ branches:
   - master
 deploy:
   provider: gae
+  version: 2
   keyfile: sethladd-site-8958bc933793.json
   default: true
   skip_cleanup: true
