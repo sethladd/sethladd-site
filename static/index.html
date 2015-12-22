@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+  Copyright 2015 Seth Ladd. All rights reserved.
+
+  Design from http://www.getmdl.io/templates/article/index.html
+-->
 <html lang="en" itemscope itemtype="http://schema.org/Person">
 <head>
 	<meta charset="utf-8">
@@ -7,239 +12,254 @@
 	<meta name="description" content="The homepage of Seth Ladd">
 	<meta name="author" content="Seth Ladd">
 	<link href="https://plus.google.com/118397406534237711570" rel="author">
+  <link rel="canonical" href="https://sethladd.com/">
 	<meta itemprop="name" content="Seth Ladd">
 	<meta itemprop="description" content="Seth Ladd is a web engineer and product manager at Google.">
 
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  <link href='//fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-      .header .pic {
-      	text-align: center;
-      }
+  <link rel="shortcut icon" href="favicon.ico">
 
-      .header .pic img {
-      	border-radius: 5px;
-      }
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      .hero-unit {
-      	padding: 30px;
-      }
-    </style>
-    <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+    ga('create', 'UA-8438792-1', 'auto');
+    ga('send', 'pageview');
 
-    <link rel="shortcut icon" href="favicon.ico">
+  </script>
 
-    <script type="text/javascript">
-    window.___gcfg = {lang: 'en'};
-    (function() 
-    {var po = document.createElement("script");
-    po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(po, s);
-    })();</script>
+  <style>
+.demo-ribbon {
+  width: 100%;
+  height: 30vh;
+  background-color: #3F51B5;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
 
-    <script type="text/javascript">
+.demo-header .mdl-layout__header-row {
+  padding-left: 40px;
+  background-color: #303F9F;
+  color: white;
+}
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-8438792-1']);
-      _gaq.push(['_trackPageview']);
+.demo-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+.demo-content {
+  border-radius: 2px;
+  padding: 0px 56px 80px 56px;
+  margin-bottom: 80px;
+  margin-top: -25vh;
+}
 
-    </script>
+.demo-layout.is-small-screen .demo-content {
+  padding: 40px 28px;
+}
+
+.demo-content h3 {
+  margin-top: 48px;
+}
+
+.demo-footer {
+  padding-left: 40px;
+}
+
+.demo-footer .mdl-mini-footer--link-list a {
+  font-size: 13px;
+}
+
+dd {
+  padding-bottom: 16px;
+}
+  </style>
   </head>
 
   <body>
 
-    <div class="container">
+   <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout">
+      <header class="demo-header mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Seth Ladd</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#bio">Bio</a>
+            <a class="mdl-navigation__link" href="#contact">Contact</a>
+            <a class="mdl-navigation__link" href="#projects">Projects</a>
+          </nav>
+        </div>
+      </header>
+      <main class="demo-main mdl-layout__content">
 
-    	<div class="row header">
-    		<div class="span4 pic">
-      			<img src="images/seth-ladd-headshot.jpg" width="210" height="210"
-      				alt="Picture of Seth Ladd">
-     	 	</div>
+        <div class="demo-ribbon"></div>
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <h3 id="bio">Bio</h3>
+              <p>
+                I am currently a Product Manager at Google, focusing on
+                <a href="http://flutter.io">Flutter</a> and new mobile
+                technologies. Flutter is a new open-source project to help
+                developers build high-performance, high-fidelity, mobile apps
+                for iOS and Android from a single codebase.
+              </p>
+              <p>
+                I am also a software engineer, developer advocate,
+                conference organizer,
+                and book author. I have worked at startups, government 
+                contractors, military contractors, and freelanced. I love to
+                connect people and things.
+              </p>
 
-		  	<div class="span8">
-		  		<div class="hero-unit">
-				    <h1>Seth Ladd</h1>
-				    <p>
-				    	Web engineer and Chrome Developer Advocate.
-				    </p>
-	          		<div style="height: 69px" class="g-plus" data-href="https://plus.google.com/118397406534237711570" data-width="260" data-height="69" ></div>
+              <h3 id="contact">Contact</h3>
+              <ul>
+                <li>
+                  <a href='ma&#105;lto&#58;s&#101;%7&#52;&#104;la%&#54;4d&#37;4&#48;&#103;mail&#46;c%&#54;Fm'>s&#101;thladd&#64;gmail&#46;com</a>
+                <li>
+                  <a href="http://profiles.google.com/sethladd">Google+</a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/sethladd">Twitter</a>
+                </li>
+                <li>
+                  <a href="http://blog.sethladd.com">Blog</a>
+                </li>
+                <li>
+                  <a href="https://github.com/sethladd">GitHub</a>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/in/sethladd">LinkedIn</a>
+                </li>
+                <li>
+                  <a href="http://www.facebook.com/sethladd">Facebook</a>
+                </li>
+                <li>
+                  <a href="http://www.quora.com/Seth-Ladd">Quora</a>
+                </li>
+                <li>
+                  <a href="http://www.reddit.com/user/sethladd/">Reddit</a>
+                </li>
+                <li>
+                  <a href="https://stackoverflow.com/users/123471/seth-ladd">Stack Overflow</a>
+                </li>
+              </ul>
 
-				</div>
-			</div>
-    	</div>
+              <h3 id="projects">Projects</h3>
 
-      <div class="row">
-      	<div class="span4">
-      		<h2>Current gig</h2>
-
-      		<img src="images/dart-logo.png" width="48" height="48"
-      			alt="Dart logo" style="float:left; margin-right: 5px">
-
-      		<p>
-      			As a Developer Advocate for
-      			<a href="http://www.dartlang.org">Dart</a>, the new
-      			platform for structured web apps, I am
-      			documenting the project and educating
-      			developers about the new way to build
-      			full featured and performant web apps.
-      			Dart speaks to structured
-      			app developers from all platforms and
-      			helps them build and deploy awesome apps
-      			for the modern web.
-      		</p>
-
-      		<h2>Bio</h2>
-
-      		<p>
-      			Seth is a web engineer and is currently a Chrome Developer Advocate,
-      			helping developers of all sizes launch
-      			awesome modern web apps. He produced
-      			Aloha on Rails, the Hawaii Ruby on Rails and
-      			Web Development Conference, and New Game, the conference for HTML5 game developers. Way back, Seth co-authored the Expert Spring MVC book.
-      			More recently, he helped release Angry Birds for the web.
-      			Seth is on the board of the Academy of Interactive Arts and Sciences.
-      		</p>
-      	</div>
-
-      	<div class="span4">
-
-      		<h2>Read me</h2>
-      		<p>
-      			From <a href="http://blog.sethladd.com">my blog</a>.
-      		</p>
-      		<div id="feed-posts">
-
-      		</div>
-
-
-      		<h2>Find me</h2>
-      		<ul>
-      			<li>
-      				<a href="http://profiles.google.com/sethladd">Google+</a>
-      			</li>
-      			<li>
-      				<a href="http://twitter.com/sethladd">Twitter</a>
-      			</li>
-      			<li>
-      				<a href="http://blog.sethladd.com">Blog</a>
-      			</li>
-      			<li>
-      				<a href="https://github.com/sethladd">Github</a>
-      			</li>
-      			<li>
-      				<a href="http://www.linkedin.com/in/sethladd">LinkedIn</a>
-      			</li>
-      			<li>
-      				<a href="http://www.facebook.com/sethladd">Facebook</a>
-      			</li>
-      			<li>
-      				<a href="http://www.quora.com/Seth-Ladd">Quora</a>
-      			</li>
-      			<li>
-      				<a href="http://www.reddit.com/user/sethladd/">Reddit</a>
-      			</li>
-      		</ul>
-
-      		<h2>Watch me</h2>
-      		<ul>
-      			<li>
-      				<a href="http://www.youtube.com/watch?v=2AuYYYR_z58">Introduction to Dart</a> from Seattle GTUG
-      			</li>
-      			<li>
-      				<a href="http://vimeo.com/32214850">Box2D for the JavaScript developer</a> from onGameStart
-      			</li>
-      			<li>
-      				<a href="http://blog.sethladd.com/2011/05/source-code-slides-and-video-for-html5.html">Super Browser 2 Turbo HD Remix, and Intro to HTML5 game development</a> from Google IO 2011
-      			</li>
-      		</ul>
-      	</div>
-
-      	<div class="span4">
-      		<h2>Past projects</h2>
-
-      		<dl>
-      			<dt><a href="http://creativejs.com/2011/09/box2d-javascript-tutorial-series-by-seth-ladd/">JavaScript &amp; Box2D Tutorials</a></dt>
-      			<dd>
-      				A series of tutorials on using the popular phyiscs engine with JavaScript, starting with a <a href="http://blog.sethladd.com/2011/08/box2d-orientation-for-javascript.html">Box2D orientation for the JavaScript developer</a>.
-      			</dd>
-      			<dt>
-      				Developer Advocate for the <a href="https://chrome.google.com/webstore/">Chrome Web Store</a>
-      			</dt>
-      			<dd>
-      				Helped numerous businesses build and launch web apps
-      				into the Chrome Web Store.
-      			</dd>
-      			<dt>
-      				Launched <a href="http://chrome.angrybirds.com">Angry Birds for the web</a>
-      			</dt>
-      			<dd>
-      				Helped Angry Birds launch on the modern web.
-      			</dd>
-      			<dt>
-      				Produced &amp; co-organized <a href="http://newgameconf.com/2011/">New Game</a>
-      			</dt>
-      			<dd>
-      				Sold out the first North American conference for HTML5 game developers.
-      			</dd>
-      			<dt>
-      				Launched the <a href="http://www.w3.org/html/logo/">HTML5 logo</a>
-      			</dt>
-      			<dd>
-      				Helped the W3C launch an identity for HTML5.
-      			</dd>
-      			<dt>
-      				Produced <a href="http://www.alohaonrails.com">Aloha on Rails</a>
-      			</dt>
-      			<dd>
-      				Over 160 speakers and attendees visited Oahu for 2 full days of Rails and software craftsmanship discussions, debates, and surfing.
-      			</dd>
-      			<dt>
-      				Built the Defense Safety Enterprise System
-      			</dt>
-      			<dd>
-      				DSES is a large data warehouse of safety information, and its Rails front-end, for the Office of the Secretary of the Defense. Yes, Rails is deployed in the military.
-      			</dd>
-      			<dt>
-      				Co-authored <a href="http://www.amazon.com/Expert-Spring-Flow-Experts-Voice/dp/159059584X">Expert Spring MVC</a>
-      			</dt>
-      			<dd>
-      				In which I learned a lot about authoring and coordinating a multi-author project.
-      			</dd>
-      			<dt>
-      				Built Errorlytics
-      			</dt>
-      			<dd>
-      				Engineered a service that identifies and fixes 404 errors for your Drupal, Wordpress, PHP, Java, and Rails web sites.
-      			</dd>
-      			<dt>
-      				Built Hawaii's online business registration system
-      			</dt>
-      			<dd>
-      				Engineered and launched the state's
-      				first integrated inter-agency business registration system.
-      			</dd>
-      		</dl>
-      	</div>
-      </div>
-
-      <footer>
-        <p>&copy; Seth Ladd 2015</p>
-      </footer>
-
-    </div> <!-- container -->
-
-    <script  type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script  type="text/javascript" src="scripts/display-blog-posts.js"></script>
+              <dl>
+                <dt>Product Manager, <a href="http://flutter.io">Flutter</a></dt>
+                <dd>
+                  Help make mobile app development awesome.
+                </dd>
+                <dt>Product Manager, Dart</dt>
+                <dd>
+                Helped make Dart great for developers. Lead the rewrite
+                of the dartdoc tool for fast API docs, reduced dependency on
+                symlinks, worked with the community to relaunch dartdocs.org,
+                enabled user measurements in numerous tools, PM'ed the launch
+                of dartpad.dartlang.org.
+                </dd>
+                <dt>Dart Developer Summit, Producer</dt>
+                <dd>
+                  Helped produce the first Dart developer summit, connecting
+                  Dart developers and the engineers building Dart.
+                </dd>
+                <dt>Developer Relations Lead, <a href="https://www.dartlang.org">Dart</a></dt>
+                <dd>
+                  Lead the developer relations team for Dart,
+                  the scalable programming language from Google. We
+                  built websites, authored documentation, traveled the world
+                  giving presentations and trainings, built samples,
+                  and helped launch Dart 1.0.
+                </dd>
+                <dt>Chrome Dev Summit, Producer</dt>
+                <dd>
+                  Produced the first Chrome Dev Summit, connecting key web
+                  developers with Chrome engineers.
+                </dd>
+                <dt><a href="http://creativejs.com/2011/09/box2d-javascript-tutorial-series-by-seth-ladd/">JavaScript &amp; Box2D Tutorials</a></dt>
+                <dd>
+                  A series of tutorials on using the popular phyiscs engine with JavaScript, starting with a <a href="http://blog.sethladd.com/2011/08/box2d-orientation-for-javascript.html">Box2D orientation for the JavaScript developer</a>.
+                </dd>
+                <dt>
+                  Developer Advocate for the <a href="https://chrome.google.com/webstore/">Chrome Web Store</a>
+                </dt>
+                <dd>
+                  Helped numerous businesses build and launch web apps
+                  into the Chrome Web Store.
+                </dd>
+                <dt>
+                  Launched <a href="http://chrome.angrybirds.com">Angry Birds for the web</a>
+                </dt>
+                <dd>
+                  Helped Angry Birds launch on the modern web.
+                </dd>
+                <dt>
+                  Produced &amp; co-organized <a href="http://newgameconf.com/2011/">New Game</a>
+                </dt>
+                <dd>
+                  Sold out the first North American conference for HTML5 game developers.
+                </dd>
+                <dt>
+                  Launched the <a href="http://www.w3.org/html/logo/">HTML5 logo</a>
+                </dt>
+                <dd>
+                  Helped the W3C launch an identity for HTML5.
+                </dd>
+                <dt>
+                  Produced <a href="http://www.alohaonrails.com">Aloha on Rails</a>
+                </dt>
+                <dd>
+                  Over 160 speakers and attendees visited Oahu for 2 full days of Rails and software craftsmanship discussions, debates, and surfing.
+                </dd>
+                <dt>
+                  Built the Defense Safety Enterprise System
+                </dt>
+                <dd>
+                  DSES is a large data warehouse of safety information, and its Rails front-end, for the Office of the Secretary of the Defense. Yes, Rails is deployed in the military.
+                </dd>
+                <dt>
+                  Co-authored <a href="http://www.amazon.com/Expert-Spring-Flow-Experts-Voice/dp/159059584X">Expert Spring MVC</a>
+                </dt>
+                <dd>
+                  In which I learned a lot about authoring and coordinating a multi-author project.
+                </dd>
+                <dt>
+                  Built Errorlytics
+                </dt>
+                <dd>
+                  Engineered a service that identifies and fixes 404 errors for your Drupal, Wordpress, PHP, Java, and Rails web sites.
+                </dd>
+                <dt>
+                  Built Hawaii's online business registration system
+                </dt>
+                <dd>
+                  Engineered and launched the state's
+                  first integrated inter-agency business registration system.
+                </dd>
+              </dl>
+          </div>
+        </div>
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="#">Copyright 2015 Seth Ladd.</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
+    </div>
 </body>
 </html>
