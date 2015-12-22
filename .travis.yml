@@ -15,3 +15,4 @@ before_install:
   -in sethladd-site-8958bc933793.json.enc -out sethladd-site-8958bc933793.json
   -d
 after_deploy: cat /home/travis/.config/gcloud/logs/2015.12.22/*.log
+after_failure: cat /home/travis/.config/gcloud/logs/2015.12.22/*.log
