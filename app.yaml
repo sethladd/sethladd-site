@@ -1,4 +1,3 @@
-application: sethladd-site
 version: 2
 runtime: python27
 threadsafe: true
